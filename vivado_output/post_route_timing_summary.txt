@@ -1,0 +1,669 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Oct 15 02:34:25 2026
+| Host         : THANHTUNG running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file ./vivado_output/post_route_timing_summary.txt
+| Design       : RiscvSystem
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (576)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (32)
+5. checking no_input_delay (2)
+6. checking no_output_delay (8)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (576)
+--------------------------
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[alu_result][0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[alu_result][1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[cycle_status][0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[cycle_status][1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[cycle_status][2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[cycle_status][3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[cycle_status][4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[cycle_status][5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: datapath/memory_state_reg[insn][6]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (32)
+-------------------------------------------------
+ There are 32 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (8)
+-------------------------------
+ There are 8 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    -20.918    -2054.566                    108                 3783        0.121        0.000                      0                 3783        2.000        0.000                       0                  1992  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                 Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                 ------------         ----------      --------------
+sys_clk_pin           {0.000 4.000}        8.000           125.000         
+  clk_proc_clk_wiz_0  {0.000 20.000}       40.000          25.000          
+  clkfbout_clk_wiz_0  {0.000 4.000}        8.000           125.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin                                                                                                                                                             2.000        0.000                       0                     1  
+  clk_proc_clk_wiz_0      -20.918    -2054.566                    108                 3783        0.121        0.000                      0                 3783       19.500        0.000                       0                  1988  
+  clkfbout_clk_wiz_0                                                                                                                                                    5.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        2.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { CLOCK_100MHz }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         8.000       6.751      MMCME2_ADV_X1Y2  mmcm/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       8.000       92.000     MMCME2_ADV_X1Y2  mmcm/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         4.000       2.000      MMCME2_ADV_X1Y2  mmcm/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         4.000       2.000      MMCME2_ADV_X1Y2  mmcm/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_proc_clk_wiz_0
+  To Clock:  clk_proc_clk_wiz_0
+
+Setup :          108  Failing Endpoints,  Worst Slack      -20.918ns,  Total Violation    -2054.566ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.121ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       19.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -20.918ns  (required time - arrival time)
+  Source:                 datapath/memory_state_reg[insn][6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_proc_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            datapath/divu/intermediate_remainder_reg[25]/D
+                            (rising edge-triggered cell FDCE clocked by clk_proc_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_proc_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_proc_clk_wiz_0 rise@40.000ns - clk_proc_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        60.794ns  (logic 16.718ns (27.500%)  route 44.076ns (72.500%))
+  Logic Levels:           90  (CARRY4=55 LUT2=1 LUT3=1 LUT4=3 LUT5=13 LUT6=17)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.619ns = ( 38.381 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.987ns
+    Clock Pessimism Removal (CPR):    0.567ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_proc_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  CLOCK_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    mmcm/CLOCK_100MHz
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  mmcm/clkin1_ibufg/O
+                         net (fo=1, routed)           1.285     2.736    mmcm/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.759    -5.023 r  mmcm/mmcm_adv_inst/CLKOUT0
+                         net (fo=2, routed)           2.206    -2.817    mmcm/clk_proc_clk_wiz_0
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.101    -2.716 r  mmcm/clkout1_buf/O
+                         net (fo=1977, routed)        1.729    -0.987    datapath/clock_processor
+    SLICE_X68Y12         FDRE                                         r  datapath/memory_state_reg[insn][6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X68Y12         FDRE (Prop_fdre_C_Q)         0.456    -0.531 r  datapath/memory_state_reg[insn][6]/Q
+                         net (fo=6, routed)           0.907     0.375    datapath/divu/Q[6]
+    SLICE_X71Y13         LUT5 (Prop_lut5_I0_O)        0.124     0.499 r  datapath/divu/intermediate_divisor[31]_i_22/O
+                         net (fo=1, routed)           0.818     1.317    datapath/divu/intermediate_divisor[31]_i_22_n_0
+    SLICE_X69Y12         LUT6 (Prop_lut6_I0_O)        0.124     1.441 f  datapath/divu/intermediate_divisor[31]_i_8/O
+                         net (fo=33, routed)          0.938     2.379    datapath/divu/memory_state_reg[insn][5]_1
+    SLICE_X63Y12         LUT6 (Prop_lut6_I0_O)        0.124     2.503 r  datapath/divu/intermediate_divisor[31]_i_3/O
+                         net (fo=77, routed)          0.854     3.357    datapath/divu/memory_state_reg[insn][7]
+    SLICE_X60Y10         LUT6 (Prop_lut6_I3_O)        0.124     3.481 f  datapath/divu/intermediate_divisor[6]_i_1__0/O
+                         net (fo=78, routed)          0.945     4.426    datapath/divu/e_bypass_rs2[5]
+    SLICE_X60Y14         LUT2 (Prop_lut2_I0_O)        0.124     4.550 r  datapath/divu/i___913/O
+                         net (fo=1, routed)           0.000     4.550    datapath/divu/i___913_n_0
+    SLICE_X60Y14         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     4.951 r  datapath/divu/i___0_i_21/CO[3]
+                         net (fo=1, routed)           0.000     4.951    datapath/divu/i___0_i_21_n_0
+    SLICE_X60Y15         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.065 r  datapath/divu/i___0_i_14/CO[3]
+                         net (fo=1, routed)           0.000     5.065    datapath/divu/i___0_i_14_n_0
+    SLICE_X60Y16         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.179 r  datapath/divu/i___0_i_4/CO[3]
+                         net (fo=1, routed)           0.000     5.179    datapath/divu/i___0_i_4_n_0
+    SLICE_X60Y17         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.293 r  datapath/divu/i___0_i_1/CO[3]
+                         net (fo=208, routed)         1.381     6.674    datapath/divu/i___0_i_1_n_0
+    SLICE_X55Y14         LUT6 (Prop_lut6_I4_O)        0.124     6.798 r  datapath/divu/i___15_i_36/O
+                         net (fo=1, routed)           0.331     7.129    datapath/divu/i___15_i_36_n_0
+    SLICE_X55Y15         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     7.655 r  datapath/divu/i___15_i_24/CO[3]
+                         net (fo=1, routed)           0.000     7.655    datapath/divu/i___15_i_24_n_0
+    SLICE_X55Y16         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.769 r  datapath/divu/i___15_i_15/CO[3]
+                         net (fo=1, routed)           0.000     7.769    datapath/divu/i___15_i_15_n_0
+    SLICE_X55Y17         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.883 r  datapath/divu/i___15_i_3/CO[3]
+                         net (fo=1, routed)           0.000     7.883    datapath/divu/i___15_i_3_n_0
+    SLICE_X55Y18         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.997 r  datapath/divu/i___15_i_1/CO[3]
+                         net (fo=124, routed)         1.681     9.678    datapath/divu/i___15_i_1_n_0
+    SLICE_X57Y8          LUT4 (Prop_lut4_I3_O)        0.124     9.802 r  datapath/divu/i___2_i_69__0/O
+                         net (fo=2, routed)           0.596    10.398    datapath/divu/temp_remainder[2]_81[2]
+    SLICE_X56Y8          LUT4 (Prop_lut4_I3_O)        0.124    10.522 r  datapath/divu/i___2_i_55/O
+                         net (fo=1, routed)           0.000    10.522    datapath/divu/i___2_i_55_n_0
+    SLICE_X56Y8          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.072 r  datapath/divu/i___2_i_32/CO[3]
+                         net (fo=1, routed)           0.000    11.072    datapath/divu/i___2_i_32_n_0
+    SLICE_X56Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.186 r  datapath/divu/i___2_i_15/CO[3]
+                         net (fo=1, routed)           0.000    11.186    datapath/divu/i___2_i_15_n_0
+    SLICE_X56Y10         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.300 r  datapath/divu/i___2_i_4/CO[3]
+                         net (fo=1, routed)           0.000    11.300    datapath/divu/i___2_i_4_n_0
+    SLICE_X56Y11         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.414 r  datapath/divu/i___2_i_1/CO[3]
+                         net (fo=48, routed)          1.186    12.600    datapath/divu/i___2_i_1_n_0
+    SLICE_X60Y10         LUT5 (Prop_lut5_I4_O)        0.124    12.724 f  datapath/divu/i___347_i_1__0/O
+                         net (fo=9, routed)           0.821    13.546    datapath/divu/temp_remainder[3]_83[1]
+    SLICE_X60Y18         LUT6 (Prop_lut6_I1_O)        0.124    13.670 r  datapath/divu/i___3_i_35/O
+                         net (fo=1, routed)           0.339    14.008    datapath/divu/i___3_i_35_n_0
+    SLICE_X58Y18         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    14.528 r  datapath/divu/i___3_i_24/CO[3]
+                         net (fo=1, routed)           0.000    14.528    datapath/divu/i___3_i_24_n_0
+    SLICE_X58Y19         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.645 r  datapath/divu/i___3_i_14/CO[3]
+                         net (fo=1, routed)           0.000    14.645    datapath/divu/i___3_i_14_n_0
+    SLICE_X58Y20         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.762 r  datapath/divu/i___3_i_3/CO[3]
+                         net (fo=1, routed)           0.000    14.762    datapath/divu/i___3_i_3_n_0
+    SLICE_X58Y21         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.879 r  datapath/divu/i___3_i_1/CO[3]
+                         net (fo=179, routed)         1.506    16.386    datapath/divu/i___3_i_1_n_0
+    SLICE_X63Y11         LUT3 (Prop_lut3_I2_O)        0.124    16.510 f  datapath/divu/i___4_i_52__0/O
+                         net (fo=2, routed)           0.478    16.988    datapath/divu/temp_remainder[4]_85[10]
+    SLICE_X62Y12         LUT6 (Prop_lut6_I4_O)        0.124    17.112 r  datapath/divu/i___4_i_32/O
+                         net (fo=1, routed)           0.881    17.993    datapath/divu/i___4_i_32_n_0
+    SLICE_X62Y16         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    18.513 r  datapath/divu/i___4_i_16/CO[3]
+                         net (fo=1, routed)           0.000    18.513    datapath/divu/i___4_i_16_n_0
+    SLICE_X62Y17         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    18.630 r  datapath/divu/i___4_i_4/CO[3]
+                         net (fo=1, routed)           0.000    18.630    datapath/divu/i___4_i_4_n_0
+    SLICE_X62Y18         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    18.747 r  datapath/divu/i___4_i_1/CO[3]
+                         net (fo=93, routed)          1.144    19.892    datapath/divu/i___4_i_1_n_0
+    SLICE_X60Y13         LUT5 (Prop_lut5_I4_O)        0.124    20.016 f  datapath/divu/i___349_i_1__0/O
+                         net (fo=8, routed)           0.964    20.980    datapath/divu/temp_remainder[5]_87[3]
+    SLICE_X59Y22         LUT6 (Prop_lut6_I1_O)        0.124    21.104 r  datapath/divu/i___5_i_35/O
+                         net (fo=1, routed)           0.613    21.717    datapath/divu/i___5_i_35_n_0
+    SLICE_X59Y18         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    22.115 r  datapath/divu/i___5_i_25/CO[3]
+                         net (fo=1, routed)           0.000    22.115    datapath/divu/i___5_i_25_n_0
+    SLICE_X59Y19         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    22.229 r  datapath/divu/i___5_i_13/CO[3]
+                         net (fo=1, routed)           0.000    22.229    datapath/divu/i___5_i_13_n_0
+    SLICE_X59Y20         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    22.343 r  datapath/divu/i___5_i_3/CO[3]
+                         net (fo=1, routed)           0.000    22.343    datapath/divu/i___5_i_3_n_0
+    SLICE_X59Y21         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    22.457 r  datapath/divu/i___5_i_1/CO[3]
+                         net (fo=192, routed)         0.961    23.417    datapath/divu/i___5_i_1_n_0
+    SLICE_X62Y19         LUT5 (Prop_lut5_I4_O)        0.124    23.541 f  datapath/divu/i___386_i_1__0/O
+                         net (fo=9, routed)           0.894    24.436    datapath/divu/temp_remainder[6]_89[1]
+    SLICE_X63Y12         LUT6 (Prop_lut6_I1_O)        0.124    24.560 r  datapath/divu/i___6_i_45/O
+                         net (fo=1, routed)           1.369    25.929    datapath/divu/i___6_i_45_n_0
+    SLICE_X63Y17         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    26.436 r  datapath/divu/i___6_i_30/CO[3]
+                         net (fo=1, routed)           0.000    26.436    datapath/divu/i___6_i_30_n_0
+    SLICE_X63Y18         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.550 r  datapath/divu/i___6_i_15/CO[3]
+                         net (fo=1, routed)           0.000    26.550    datapath/divu/i___6_i_15_n_0
+    SLICE_X63Y19         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.664 r  datapath/divu/i___6_i_4/CO[3]
+                         net (fo=1, routed)           0.000    26.664    datapath/divu/i___6_i_4_n_0
+    SLICE_X63Y20         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.778 r  datapath/divu/i___6_i_1/CO[3]
+                         net (fo=99, routed)          1.300    28.078    datapath/divu/i___6_i_1_n_0
+    SLICE_X66Y12         LUT5 (Prop_lut5_I4_O)        0.124    28.202 f  datapath/divu/i___351_i_1__0/O
+                         net (fo=8, routed)           0.727    28.930    datapath/divu/temp_remainder[7]_91[5]
+    SLICE_X66Y19         LUT6 (Prop_lut6_I1_O)        0.124    29.054 r  datapath/divu/i___7_i_33/O
+                         net (fo=1, routed)           0.788    29.842    datapath/divu/i___7_i_33_n_0
+    SLICE_X64Y19         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    30.227 r  datapath/divu/i___7_i_24/CO[3]
+                         net (fo=1, routed)           0.000    30.227    datapath/divu/i___7_i_24_n_0
+    SLICE_X64Y20         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    30.341 r  datapath/divu/i___7_i_14/CO[3]
+                         net (fo=1, routed)           0.000    30.341    datapath/divu/i___7_i_14_n_0
+    SLICE_X64Y21         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    30.455 r  datapath/divu/i___7_i_3/CO[3]
+                         net (fo=1, routed)           0.000    30.455    datapath/divu/i___7_i_3_n_0
+    SLICE_X64Y22         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    30.569 r  datapath/divu/i___7_i_1/CO[3]
+                         net (fo=157, routed)         1.356    31.925    datapath/divu/i___7_i_1_n_0
+    SLICE_X72Y16         LUT6 (Prop_lut6_I5_O)        0.124    32.049 f  datapath/divu/i___127_i_4__0/O
+                         net (fo=3, routed)           0.590    32.639    datapath/divu/temp_remainder[8]_93[16]
+    SLICE_X72Y15         LUT6 (Prop_lut6_I4_O)        0.124    32.763 r  datapath/divu/i___8_i_20/O
+                         net (fo=1, routed)           0.554    33.317    datapath/divu/i___8_i_20_n_0
+    SLICE_X70Y15         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526    33.843 r  datapath/divu/i___8_i_4/CO[3]
+                         net (fo=1, routed)           0.000    33.843    datapath/divu/i___8_i_4_n_0
+    SLICE_X70Y16         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    33.957 r  datapath/divu/i___8_i_1/CO[3]
+                         net (fo=111, routed)         1.456    35.413    datapath/divu/i___8_i_1_n_0
+    SLICE_X67Y21         LUT5 (Prop_lut5_I4_O)        0.124    35.537 r  datapath/divu/i___203_i_1__0/O
+                         net (fo=6, routed)           0.925    36.462    datapath/divu/temp_remainder[9]_95[21]
+    SLICE_X69Y17         LUT4 (Prop_lut4_I1_O)        0.124    36.586 r  datapath/divu/i___9_i_18/O
+                         net (fo=1, routed)           0.000    36.586    datapath/divu/i___9_i_18_n_0
+    SLICE_X69Y17         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401    36.987 r  datapath/divu/i___9_i_3/CO[3]
+                         net (fo=1, routed)           0.000    36.987    datapath/divu/i___9_i_3_n_0
+    SLICE_X69Y18         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    37.101 r  datapath/divu/i___9_i_1/CO[3]
+                         net (fo=151, routed)         1.389    38.490    datapath/divu/i___9_i_1_n_0
+    SLICE_X70Y12         LUT5 (Prop_lut5_I4_O)        0.124    38.614 f  datapath/divu/i___390_i_1__0/O
+                         net (fo=9, routed)           0.809    39.423    datapath/divu/temp_remainder[10]_97[5]
+    SLICE_X65Y12         LUT6 (Prop_lut6_I1_O)        0.124    39.547 r  datapath/divu/i___24_i_36/O
+                         net (fo=1, routed)           1.208    40.755    datapath/divu/i___24_i_36_n_0
+    SLICE_X60Y21         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    41.140 r  datapath/divu/i___24_i_27/CO[3]
+                         net (fo=1, routed)           0.000    41.140    datapath/divu/i___24_i_27_n_0
+    SLICE_X60Y22         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    41.254 r  datapath/divu/i___24_i_15/CO[3]
+                         net (fo=1, routed)           0.000    41.254    datapath/divu/i___24_i_15_n_0
+    SLICE_X60Y23         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    41.368 r  datapath/divu/i___24_i_3/CO[3]
+                         net (fo=1, routed)           0.000    41.368    datapath/divu/i___24_i_3_n_0
+    SLICE_X60Y24         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    41.482 r  datapath/divu/i___24_i_1/CO[3]
+                         net (fo=119, routed)         1.198    42.681    datapath/divu/i___24_i_1_n_0
+    SLICE_X66Y23         LUT5 (Prop_lut5_I4_O)        0.124    42.805 f  datapath/divu/i___10_i_1__0/O
+                         net (fo=8, routed)           0.591    43.396    datapath/divu/temp_remainder[11]_99[10]
+    SLICE_X70Y22         LUT6 (Prop_lut6_I4_O)        0.124    43.520 r  datapath/divu/i___11_i_30/O
+                         net (fo=1, routed)           0.495    44.015    datapath/divu/i___11_i_30_n_0
+    SLICE_X69Y22         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    44.522 r  datapath/divu/i___11_i_14/CO[3]
+                         net (fo=1, routed)           0.000    44.522    datapath/divu/i___11_i_14_n_0
+    SLICE_X69Y23         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    44.636 r  datapath/divu/i___11_i_3/CO[3]
+                         net (fo=1, routed)           0.000    44.636    datapath/divu/i___11_i_3_n_0
+    SLICE_X69Y24         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    44.750 r  datapath/divu/i___11_i_1/CO[3]
+                         net (fo=136, routed)         1.173    45.923    datapath/divu/i___11_i_1_n_0
+    SLICE_X67Y24         LUT5 (Prop_lut5_I4_O)        0.124    46.047 f  datapath/divu/i___411_i_1__0/O
+                         net (fo=9, routed)           0.331    46.378    datapath/divu/temp_remainder[12]_101[5]
+    SLICE_X64Y24         LUT6 (Prop_lut6_I1_O)        0.124    46.502 r  datapath/divu/i___26_i_34/O
+                         net (fo=1, routed)           0.876    47.377    datapath/divu/i___26_i_34_n_0
+    SLICE_X65Y24         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    47.762 r  datapath/divu/i___26_i_25/CO[3]
+                         net (fo=1, routed)           0.009    47.771    datapath/divu/i___26_i_25_n_0
+    SLICE_X65Y25         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    47.885 r  datapath/divu/i___26_i_16/CO[3]
+                         net (fo=1, routed)           0.000    47.885    datapath/divu/i___26_i_16_n_0
+    SLICE_X65Y26         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    47.999 r  datapath/divu/i___26_i_3/CO[3]
+                         net (fo=1, routed)           0.000    47.999    datapath/divu/i___26_i_3_n_0
+    SLICE_X65Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    48.113 r  datapath/divu/i___26_i_1/CO[3]
+                         net (fo=122, routed)         1.187    49.300    datapath/divu/i___26_i_1_n_0
+    SLICE_X73Y24         LUT5 (Prop_lut5_I4_O)        0.124    49.424 f  datapath/divu/i___433_i_1__0/O
+                         net (fo=9, routed)           0.703    50.127    datapath/divu/temp_remainder[13]_103[3]
+    SLICE_X73Y24         LUT6 (Prop_lut6_I1_O)        0.124    50.251 r  datapath/divu/i___13_i_37/O
+                         net (fo=1, routed)           0.570    50.821    datapath/divu/i___13_i_37_n_0
+    SLICE_X73Y25         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    51.219 r  datapath/divu/i___13_i_27/CO[3]
+                         net (fo=1, routed)           0.000    51.219    datapath/divu/i___13_i_27_n_0
+    SLICE_X73Y26         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    51.333 r  datapath/divu/i___13_i_14/CO[3]
+                         net (fo=1, routed)           0.000    51.333    datapath/divu/i___13_i_14_n_0
+    SLICE_X73Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    51.447 r  datapath/divu/i___13_i_3/CO[3]
+                         net (fo=1, routed)           0.000    51.447    datapath/divu/i___13_i_3_n_0
+    SLICE_X73Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    51.561 r  datapath/divu/i___13_i_1/CO[3]
+                         net (fo=117, routed)         1.267    52.828    datapath/divu/i___13_i_1_n_0
+    SLICE_X75Y28         LUT5 (Prop_lut5_I4_O)        0.124    52.952 f  datapath/divu/i___42_i_1__0/O
+                         net (fo=6, routed)           0.619    53.570    datapath/divu/temp_remainder[14]_105[15]
+    SLICE_X78Y26         LUT6 (Prop_lut6_I1_O)        0.124    53.694 r  datapath/divu/i___14_i_16/O
+                         net (fo=1, routed)           0.645    54.340    datapath/divu/i___14_i_16_n_0
+    SLICE_X78Y29         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526    54.866 r  datapath/divu/i___14_i_3/CO[3]
+                         net (fo=1, routed)           0.000    54.866    datapath/divu/i___14_i_3_n_0
+    SLICE_X78Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    54.980 r  datapath/divu/i___14_i_1/CO[3]
+                         net (fo=117, routed)         1.068    56.047    datapath/divu/i___14_i_1_n_0
+    SLICE_X80Y30         LUT5 (Prop_lut5_I4_O)        0.124    56.171 f  datapath/divu/intermediate_remainder[8]_i_2__0/O
+                         net (fo=4, routed)           0.692    56.864    datapath/divu/temp_remainder[15]_107[7]
+    SLICE_X80Y30         LUT6 (Prop_lut6_I1_O)        0.124    56.988 r  datapath/divu/intermediate_remainder[30]_i_29/O
+                         net (fo=1, routed)           0.669    57.657    datapath/divu/intermediate_remainder[30]_i_29_n_0
+    SLICE_X74Y30         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526    58.183 r  datapath/divu/intermediate_remainder_reg[30]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    58.183    datapath/divu/intermediate_remainder_reg[30]_i_15_n_0
+    SLICE_X74Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    58.297 r  datapath/divu/intermediate_remainder_reg[30]_i_6/CO[3]
+                         net (fo=1, routed)           0.000    58.297    datapath/divu/intermediate_remainder_reg[30]_i_6_n_0
+    SLICE_X74Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    58.411 r  datapath/divu/intermediate_remainder_reg[30]_i_3/CO[3]
+                         net (fo=32, routed)          1.271    59.682    datapath/divu/intermediate_remainder_reg[30]_i_3_n_0
+    SLICE_X64Y32         LUT5 (Prop_lut5_I4_O)        0.124    59.806 r  datapath/divu/intermediate_remainder[25]_i_1__0/O
+                         net (fo=1, routed)           0.000    59.806    datapath/divu/temp_remainder[16]_109[25]
+    SLICE_X64Y32         FDCE                                         r  datapath/divu/intermediate_remainder_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_proc_clk_wiz_0 rise edge)
+                                                     40.000    40.000 r  
+    H16                                               0.000    40.000 r  CLOCK_100MHz (IN)
+                         net (fo=0)                   0.000    40.000    mmcm/CLOCK_100MHz
+    H16                  IBUF (Prop_ibuf_I_O)         1.380    41.380 r  mmcm/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.542    mmcm/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.814    34.728 r  mmcm/mmcm_adv_inst/CLKOUT0
+                         net (fo=2, routed)           2.012    36.740    mmcm/clk_proc_clk_wiz_0
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091    36.831 r  mmcm/clkout1_buf/O
+                         net (fo=1977, routed)        1.549    38.381    datapath/divu/clock_processor
+    SLICE_X64Y32         FDCE                                         r  datapath/divu/intermediate_remainder_reg[25]/C
+                         clock pessimism              0.567    38.948    
+                         clock uncertainty           -0.088    38.860    
+    SLICE_X64Y32         FDCE (Setup_fdce_C_D)        0.029    38.889    datapath/divu/intermediate_remainder_reg[25]
+  -------------------------------------------------------------------
+                         required time                         38.889    
+                         arrival time                         -59.806    
+  -------------------------------------------------------------------
+                         slack                                -20.918    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.121ns  (arrival time - required time)
+  Source:                 datapath/memory_state_reg[alu_result][8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_proc_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            datapath/div/intermediate_dividend_reg[24]/D
+                            (rising edge-triggered cell FDCE clocked by clk_proc_clk_wiz_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_proc_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_proc_clk_wiz_0 rise@0.000ns - clk_proc_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.479ns  (logic 0.186ns (38.810%)  route 0.293ns (61.190%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.912ns
+    Source Clock Delay      (SCD):    -0.675ns
+    Clock Pessimism Removal (CPR):    -0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_proc_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  CLOCK_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    mmcm/CLOCK_100MHz
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  mmcm/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.659    mmcm/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.613    -1.954 r  mmcm/mmcm_adv_inst/CLKOUT0
+                         net (fo=2, routed)           0.696    -1.257    mmcm/clk_proc_clk_wiz_0
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026    -1.231 r  mmcm/clkout1_buf/O
+                         net (fo=1977, routed)        0.557    -0.675    datapath/clock_processor
+    SLICE_X51Y7          FDRE                                         r  datapath/memory_state_reg[alu_result][8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y7          FDRE (Prop_fdre_C_Q)         0.141    -0.534 r  datapath/memory_state_reg[alu_result][8]/Q
+                         net (fo=13, routed)          0.293    -0.240    datapath/div/Q[8]
+    SLICE_X45Y9          LUT6 (Prop_lut6_I2_O)        0.045    -0.195 r  datapath/div/intermediate_dividend[24]_i_1/O
+                         net (fo=1, routed)           0.000    -0.195    datapath/div/e_unsigned_bypass_rs1[8]
+    SLICE_X45Y9          FDCE                                         r  datapath/div/intermediate_dividend_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_proc_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  CLOCK_100MHz (IN)
+                         net (fo=0)                   0.000     0.000    mmcm/CLOCK_100MHz
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  mmcm/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.886    mmcm/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.407    -2.521 r  mmcm/mmcm_adv_inst/CLKOUT0
+                         net (fo=2, routed)           0.752    -1.769    mmcm/clk_proc_clk_wiz_0
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029    -1.740 r  mmcm/clkout1_buf/O
+                         net (fo=1977, routed)        0.828    -0.912    datapath/div/clock_processor
+    SLICE_X45Y9          FDCE                                         r  datapath/div/intermediate_dividend_reg[24]/C
+                         clock pessimism              0.504    -0.408    
+    SLICE_X45Y9          FDCE (Hold_fdce_C_D)         0.092    -0.316    datapath/div/intermediate_dividend_reg[24]
+  -------------------------------------------------------------------
+                         required time                          0.316    
+                         arrival time                          -0.195    
+  -------------------------------------------------------------------
+                         slack                                  0.121    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_proc_clk_wiz_0
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { mmcm/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         40.000      37.056     RAMB36_X1Y1      mem/mem_reg_0_0/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       40.000      173.360    MMCME2_ADV_X1Y2  mmcm/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X25Y11     tempStore_reg[0]_i_3/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X25Y11     tempStore_reg[0]_i_3/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_0
+  To Clock:  clkfbout_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        5.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_0
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { mmcm/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         8.000       5.845      BUFGCTRL_X0Y17   mmcm/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       8.000       92.000     MMCME2_ADV_X1Y2  mmcm/mmcm_adv_inst/CLKFBIN
+
+
+

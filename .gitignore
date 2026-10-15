@@ -1,0 +1,17 @@
+# Vivado & Xsim Temporary and Log Files
+*.log
+*.jou
+*.pb
+*.backup.jou
+*.backup.log
+.Xil/
+xsim.dir/
+vivado.jou
+vivado.log
+
+# Simulation Waveforms & Databases (large binaries)
+*.wdb
+sim_waveform.vcd
+
+# Memory initialization & temporary machine code
+.tmp.riscv.o
