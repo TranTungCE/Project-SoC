@@ -1,6 +1,6 @@
 # 5-Stage Pipelined RISC-V SoC (RV32IM) on Xilinx Arty-Z7-20
 
-Dự án thiết kế, mô phỏng và thực thi phần cứng hoàn chỉnh cho bài tập lớn môn **Introduction to SoC (Semester 251)** — Khoa Khoa học & Kỹ thuật Máy tính, Trường Đại học Bách Khoa - ĐHQG TP.HCM (HCMUT).
+Dự án thiết kế, mô phỏng và thực thi phần cứng hoàn chỉnh cho bài tập lớn môn **Introduction to SoC** — Khoa Khoa học & Kỹ thuật Máy tính, Trường Đại học Bách Khoa - ĐHQG TP.HCM (HCMUT).
 
 Target Board: **Digilent Arty-Z7-20** (`xc7z020clg400-1`)  
 EDA Tool: **AMD Xilinx Vivado Design Suite 2024.2**
@@ -159,15 +159,3 @@ D:\OTHER\Vivado\2024.2\bin\vivado.bat -mode batch -source run_vivado.tcl -nojour
 - **Tần số hoạt động cực đại ($F_{\max}$):** $\approx 16.41\text{ MHz}$
 - **Trạng thái DRC:** `0 Errors` (Đã pass toàn bộ điều kiện tạo bitstream).
 
----
-
-## 7. Hồ Sơ Nộp Bài
-Khi gửi email nộp bài cho thầy theo cú pháp:
-- **Tiêu đề email:** `[Introduction to SoC] [MSSV] Practice #no.`
-- **Địa chỉ gửi:** `hoangtt@uec.ac.jp`  
-- **CC:** `anhpkn@hcmut.edu.vn`, `tnthinh@hcmut.edu.vn`
-- **File đính kèm:**
-  1. `src/DatapathPipelined.sv`
-  2. Báo cáo đồ án: `REPORT_ASSIGNMENT_SOC.pdf`
-  3. Báo cáo tài nguyên & tần số: `vivado_output/post_route_utilization.txt` và `vivado_output/post_route_timing_summary.txt`
-  4. File bitstream nạp board: `vivado_output/RiscvSystem_ArtyZ7.bit`
